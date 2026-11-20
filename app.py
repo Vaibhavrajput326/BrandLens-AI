@@ -12,7 +12,14 @@ from database import (
     get_review_count,
     save_brand,
     get_all_brands,
-    get_brand_by_name
+    get_brand_by_name,
+    get_review_by_id,
+    update_review_status,
+    update_final_content,
+    get_audit_log,
+    add_knowledge_item,
+    get_knowledge_items,
+    delete_knowledge_item
 )
 
 
