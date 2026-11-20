@@ -5,6 +5,8 @@ from datetime import datetime
 import engine
 
 from database import (
+    initialize_database,
+    initialize_demo_data,
     save_review,
     get_all_reviews,
     get_review_count,
@@ -24,7 +26,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
+# Initialize database and demo workspace
+initialize_database()
+initialize_demo_data()
 
 # =====================================================
 # 2. PREMIUM DARK THEME CSS
